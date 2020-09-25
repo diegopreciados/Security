@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Security Signal</title>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    font-family:sans-serif;
+	}
+
+#chat{
+    position:fixed;
+    width: 200px;
+    height: 40px;
+    bottom: 0;
+    right: 350px;
+    background: purple;
+    z-index: 1;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+    }
+
+header{
+	position:relative;
+	margin:20px auto;
+	width:1000px;
+	height:120px;
+	}
+#logo{
+	position:absolute;
+	top:20px;
+	right:30px;
+	width:300px;
+	height:60px;
+    font-family: 'Indie Flower', cursive; 
+    font-size: 50px;
+    text-align: center;
+    color: rgb(6, 6, 163);
+    line-height: 60px;
+	}
+.iconos{
+	position:absolute;
+	width:42px;
+	height:42px;
+	background:white;
+	border-radius:100%;
+    text-align: center;
+    line-height: 42px;
+    color:white;
+	}
+#imagen1{
+	top:42px;
+    left:19px;
+    background: rgb(69, 219, 10);
+	}
+	
+#imagen2{
+	top:42px;
+	left:71px;   
+    background: rgb(185, 185, 238);
+	}
+	
+#imagen3{
+	top:42px;
+	left:120px;
+    background: pink;
+	}
+		
+nav{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:48px;
+	}
+    
+.acciones{
+	float:left;
+	width:192px;
+	margin:0px 4px;
+	height:48px;
+	background:#04B4AE;
+    font-family: 'Indie Flower', cursive;
+    color:white;
+    text-align: center;
+    line-height: 48px;
+    }
+	
+#first{
+	position:relative;
+	margin:20px auto;
+	width:1000px;
+	height:192px;
+	}
+#first ul{
+    width:1010px;
+	height:192px;
+    }
+    
+#first ul li{
+    float:left;
+    width:326px;
+	height:192px;
+    margin-right: 10px;
+    text-align: center;
+    }
+#first ul li img{
+    border-radius: 100%;
+    height: 100px;
+    }
+#first ul li h1{
+    font-family: 'Indie Flower', cursive;
+    }
+
+#first ul li p{
+    font-size: 14px;
+    margin:10px;
+    }
+
+section{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:453px;
+	}
+aside#izquierda{
+	position:absolute;
+	left:0;
+	top:0;
+	width:200px;
+	height:453px;
+    background:white;
+    }
+    
+aside#izquierda ul li{
+	background: #58ACFA;;
+    padding: 10px;
+    margin:2px 10px;
+    list-style: circle;
+    list-style-position: inside;
+    list-style-image: url(pin.jpg);	
+    size: 5px;
+    }
+	
+article{
+	position:absolute;
+	left:200px;
+	top:0;
+	width:600px;
+	height:453px;
+	}
+article h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+article p img{
+    float:left;
+    margin-right: 20px;
+}
+    
+article p {
+    margin:10px 20px;
+    text-align: justify;
+}
+
+aside#derecha{
+	position:absolute;
+	right:0;
+	top:10px;
+	width:200px;
+	height:453px;
+	background:white
+	}
+    
+aside#derecha h1{
+	width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #04B4AE;
+    color:white;
+    margin-bottom: 5px;
+	}
+aside#derecha input{
+    padding: 10px;
+    margin: 5px 0;
+    width: 176px;
+	}
+aside#derecha input[type="text"]{
+    background: url(usuario.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+	}
+aside#derecha input[type="password"]{
+    background: url(seg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+	}
+aside#derecha input[type="submit"]{
+    width: 200px;
+    background: #58ACFA;
+    border: 0px;
+	}
+
+footer{
+	position:relative;
+	margin:20px auto;
+	width:1000px;
+	height:70px;
+    text-align: center;
+    line-height: 70px;
+    color:white;
+	background:rgb(56, 56, 56);
+	}
+	
+</style>
+
+</head>
+
+<body>
+    <!--para fijar el ícono de chat en la pantalla fijo-->
+    <div id="chat">Chat</div>
+
+<!-- Inicia Cabecera -->
+
+<header>
+
+	<div id="logo"><img src="imagen.jpg" width="220" height="80"> </div>
+    
+    <div id="imagen1" class="iconos"><img src="wapp.png" width="42" height="42"></div>
+    <div id="imagen2" class="iconos"><img src="face.png" width="42" height="42"></div>
+    <div id="imagen3" class="iconos"><img src="YouTube.png" width="42" height="42"></div>
+    
+</header>
+
+<!-- Cierra Cabecera -->
+
+<!-- Inicia Barra de Navegación -->
+<nav>
+
+	<ul>
+    
+    	<li class="acciones">HOME</li>
+        <li class="acciones">QUIENES SOMOS</li>
+        <li class="acciones">PRODUCTOS</li>
+        <li class="acciones">NOTICIAS</li>
+        <li class="acciones">CONTACTENOS</li>
+  
+    </ul>
+
+</nav>
+
+<!-- Cierra Barra de Navegación -->
+
+<!-- Inicia parte Superior -->
+
+<div id="first">
+
+	<ul>
+    	<li>
+            <img src="transito.jpg" width="150">
+            <h1>Señalización</h1>
+            <p>Luces utilizadas para controles y retenes vehiculares generando seguridad sobre la vía.</p>
+        </li>
+        
+        <li>
+            <img src="servicios.jpg" width="150">
+            <h1>Prevención</h1>
+            <p>Equipos utilizados para alertar a los conductores acerca de posibles peligros que se encuentran en la vía y su finalidad es prevencion.</p>
+        </li>
+        
+        <li>
+            <img src="bomberos.jpg" width="150">
+            <h1>Emergencia</h1>
+            <p>Sistemas de alerta visual y sonora que permiten avisar a los usuarios viales para que abran paso a los vehículos de emergencia.  
+            </p>
+        </li>
+    </ul>
+    
+</div>
+
+<!-- Cierra parte Superior -->
+
+<!-- Inicia Sección -->
+
+<section>
+	
+    <aside id="izquierda">
+        <h4 style="color:rgb(11, 11, 117)">Distribuciones</h4>
+        <ul>
+            <li>
+                Star Head Signal USA
+            </li>
+            <li>Rontan Brasil</li>
+            <li>Security Signal Ch</li>
+            <li>Industria Local</li>
+        </ul>
+    </aside>
+    
+    <article>
+        <h1>Señalizadores de tráfico direccional</h1>
+        <p><img src="servicio1.jpg" width = "230">Este producto adopta doble capa de aleación de aluminio placas de estructura, que tiene contorno distinto y percusión fuerte resistente a la torceduras y pandeo, no se decolora y tiene una vida útil prolongada de 5 años.
+            Además, la barra de luz tiene un buen sellado y resistencia al agua.
+            Una gran cantidad de luces LED se distribuyen bien proporcionado en 360 grados la luminosidad del flash fuerte hacia cada dirección horizontal, utilizando luces de alta potencia LED de 1 Watt.
+            16 módulos de 4 Led cada uno (8 frontales y 8 traseras). Luces laterales de 3 led a cada lado.
+            
+             </p>
+            <br>
+            <p>Beneficios con su alto brillo y la baja potencia de consumo.
+                Tiene 12 tipos de flasheo.
+               Puede ser instalado en todo tipo de vehículos especiales. 
+               Tiene opción de anclaje fijo al techo, o anclaje removible</p>
+    </article>
+    
+    <aside id="derecha">
+        <h1>Login</h1>
+        <form>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <input type="submit" value="Enviar">
+        </form>
+    </aside>
+    
+</section>
+
+<!-- Cierra Sección -->
+
+<!-- Inicia Pie de Página -->
+
+<footer>
+      &copy; Todos los derechos reservados 
+      
+</footer>
+
+<!-- Cierra Pie de Página -->
+</body>
+</html>
+
